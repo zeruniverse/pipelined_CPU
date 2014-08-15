@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=E:\3120101980\sssssss\pipelinecpu\CPU_top.ncd
+OUTFILE=E:\3120101980\sssssss\pipelinecpu\CPU_top.bit
+FAMILY=Spartan3
+PART=xc3s200-4ft256
+WORKINGDIR=E:\3120101980\sssssss\pipelinecpu
+LICENSE=WebPack
+USER_INFO=0_0_0

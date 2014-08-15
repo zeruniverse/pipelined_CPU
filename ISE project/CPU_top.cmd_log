@@ -1,0 +1,32 @@
+xst -intstyle ise -ifn "E:/3120101980/pipelinecpu/CPU_top.xst" -ofn "E:/3120101980/pipelinecpu/CPU_top.syr" 
+xst -intstyle ise -ifn "E:/3120101980/pipelinecpu/CPU_top.xst" -ofn "E:/3120101980/pipelinecpu/CPU_top.syr" 
+xst -intstyle ise -ifn "E:/3120101980/sssssss/pipelinecpu/CPU_top.xst" -ofn "E:/3120101980/sssssss/pipelinecpu/CPU_top.syr" 
+xst -intstyle ise -ifn "E:/3120101980/sssssss/pipelinecpu/CPU_top.xst" -ofn "E:/3120101980/sssssss/pipelinecpu/CPU_top.syr" 
+xst -intstyle ise -ifn "E:/3120101980/sssssss/pipelinecpu/CPU_top.xst" -ofn "E:/3120101980/sssssss/pipelinecpu/CPU_top.syr" 
+xst -intstyle ise -ifn "E:/3120101980/sssssss/pipelinecpu/CPU_top.xst" -ofn "E:/3120101980/sssssss/pipelinecpu/CPU_top.syr" 
+xst -intstyle ise -ifn "E:/3120101980/sssssss/pipelinecpu/CPU_top.xst" -ofn "E:/3120101980/sssssss/pipelinecpu/CPU_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 CPU_top.ngc CPU_top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o CPU_top_map.ncd CPU_top.ngd CPU_top.pcf 
+xst -intstyle ise -ifn "E:/3120101980/sssssss/pipelinecpu/CPU_top.xst" -ofn "E:/3120101980/sssssss/pipelinecpu/CPU_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 CPU_top.ngc CPU_top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o CPU_top_map.ncd CPU_top.ngd CPU_top.pcf 
+xst -intstyle ise -ifn "E:/3120101980/sssssss/pipelinecpu/CPU_top.xst" -ofn "E:/3120101980/sssssss/pipelinecpu/CPU_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 CPU_top.ngc CPU_top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o CPU_top_map.ncd CPU_top.ngd CPU_top.pcf 
+par -w -intstyle ise -ol high -t 1 CPU_top_map.ncd CPU_top.ncd CPU_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU_top.twx CPU_top.ncd -o CPU_top.twr CPU_top.pcf -ucf ucf.ucf 
+xst -intstyle ise -ifn "E:/3120101980/sssssss/pipelinecpu/CPU_top.xst" -ofn "E:/3120101980/sssssss/pipelinecpu/CPU_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 CPU_top.ngc CPU_top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o CPU_top_map.ncd CPU_top.ngd CPU_top.pcf 
+xst -intstyle ise -ifn "E:/3120101980/sssssss/pipelinecpu/CPU_top.xst" -ofn "E:/3120101980/sssssss/pipelinecpu/CPU_top.syr" 
+xst -intstyle ise -ifn "E:/3120101980/sssssss/pipelinecpu/CPU_top.xst" -ofn "E:/3120101980/sssssss/pipelinecpu/CPU_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 CPU_top.ngc CPU_top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o CPU_top_map.ncd CPU_top.ngd CPU_top.pcf 
+par -w -intstyle ise -ol high -t 1 CPU_top_map.ncd CPU_top.ncd CPU_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU_top.twx CPU_top.ncd -o CPU_top.twr CPU_top.pcf -ucf ucf.ucf 
+xst -intstyle ise -ifn "E:/3120101980/sssssss/pipelinecpu/CPU_top.xst" -ofn "E:/3120101980/sssssss/pipelinecpu/CPU_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf.ucf -p xc3s200-ft256-4 CPU_top.ngc CPU_top.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o CPU_top_map.ncd CPU_top.ngd CPU_top.pcf 
+par -w -intstyle ise -ol high -t 1 CPU_top_map.ncd CPU_top.ncd CPU_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU_top.twx CPU_top.ncd -o CPU_top.twr CPU_top.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f CPU_top.ut CPU_top.ncd 

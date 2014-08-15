@@ -1,0 +1,44 @@
+Project, 'coregen', initialised from file
+'E:\3120101980\sssssss\pipelinecpu\ipcore_dir\coregen.cgp'.
+Customizing IP...
+Release 12.4 - Xilinx CORE Generator IP GUI Launcher M.81d (nt)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+Initializing IP model...
+Finished initialising IP model.
+Finished Customizing.
+Generating IP...
+WARNING:sim:89 - A core named <data_mem> already exists in the output directory.
+   Output products for this core may be overwritten.
+Initializing IP model...
+Finished initialising IP model.
+XST: HDL Compilation
+XST: Design Hierarchy Analysis
+XST: HDL Analysis
+Generating Implementation files.
+Generating ISE symbol file...
+WARNING:coreutil - WARNING: Default charset GBK not supported, using ISO-8859-1
+   instead
+Generating NGC file.
+Finished Generation Stage.
+Generating IP instantiation template...
+VHDL instantiation template already present, so not regenerating.
+WARNING:coreutil - WARNING: Default charset GBK not supported, using ISO-8859-1
+   instead
+Finished generating IP instantiation template.
+Generating metadata file...
+Finished generating metadata file.
+Generating metadata file...
+Finished generating metadata file.
+Generating ISE file...
+Finished ISE file generation.
+Creating readme './tmp/_cg\data_mem_readme.txt'.
+Generating FLIST file...
+Finished FLIST file generation.
+Preparing output directory...
+Finished preparing output directory.
+Launching readme viewer...
+Launched readme viewer.
+Moving files to output directory...
+Finished moving files to output directory
+Saved options for project 'coregen'.
+Saved options for project 'coregen'.
